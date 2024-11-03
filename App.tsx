@@ -1,19 +1,3 @@
-# React-native WebView: Search input not working on https://google.com
-
-## Steps to reproduce
-
-1. Generate react-native project
-```
-$ npx @react-native-community/cli@15.0.1 init react_native_webview_issue --version 0.76.1
-```
-
-2. Add WebView
-```
-npm i --save react-native-webview@13.12.3
-```
-
-3. Change App.tsx to
-```
 import React, { useRef, useState, useEffect } from 'react';
 import {
   SafeAreaView,
@@ -63,16 +47,3 @@ function App(): React.JSX.Element {
 }
 
 export default App;
-```
-
-4. Install pods for iOS
-```
-$ cd ios
-$ bundle install
-$ bundle exec pod install
-```
-
-5. Run on iOS
-```
-npm run ios
-```
