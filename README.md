@@ -1,4 +1,7 @@
-# React-native WebView: Search input not working on https://google.com
+# React-native WebView issue: Search input not working on https://google.com
+
+Problem: When open https://google.com in WebView in iOS, search input is not working
+Solution: rerender WebView by changing key property
 
 ## Steps to reproduce
 
